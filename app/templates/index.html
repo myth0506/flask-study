@@ -1,0 +1,168 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>酒旅测试组</title>
+    <link rel="stylesheet" href="js/mystyle.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="images/icon.png">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/style.css">
+    <script src="js/sso.js"></script>
+    <script src="js/particles.min.js"></script>
+</head>
+<body id="app">
+
+<header class="animated" data-nav="">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+                <a class="navbar-brand"><img src="images/hotel_logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">关于我们
+                        <i class="fa fa-angle-down"aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://wiki.sankuai.com/pages/viewpage.action?pageId=372247483" target="_blank">团队成员</a></li>
+                            <li><a href="http://wiki.sankuai.com/pages/viewpage.action?pageId=341835123" target="_blank">团队周报</a></li>
+                        </ul>
+                    </li>
+                    <li data-nav="shop" class="nav-shop"><a id="user-name"></a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown" data-nav="demo"><a href="javascript:void(0)" class="dropdown-toggle"
+                                                            data-toggle="dropdown" role="button" aria-haspopup="true"
+                                                            aria-expanded="false">Cappuccino <i class="fa fa-angle-down"
+                                                                                          aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://192.168.124.88:8091/index.html">接口测试</a></li>
+                            <li><a href="http://192.168.124.88:8091/lock_virtualDev.html">虚拟设备</a></li>
+                            <li><a href="http://wiki.sankuai.com/pages/viewpage.action?pageId=510643657">使用教程</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">MockLab <i
+                            class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://10.4.236.53:8090/">MockLab</a></li>
+                            <li><a href="http://10.4.236.53:8090/#RobustCheck">鲁棒性测试</a></li>
+                            <li><a href="http://wiki.sankuai.com/pages/viewpage.action?pageId=634400162">使用教程</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="images-show">
+    <div class="images-show-wrapper" style="width: 1425px; height: 614px;">
+        <div class="particles" id="particles-js">
+            <canvas class="particles-js-canvas-el" width="2850" height="1430" style="width: 100%; height: 100%;"></canvas>
+        </div>
+        <!--<video width="320" height="240" class="images-video" autoplay loop="loop" poster="/">-->
+            <!--<source src="https://img.hcharts.cn/static/highcharts/images/images-videoo.mp4" type="video/mp4">-->
+            <!--<object width="320" height="240" data="js/moxieplayer.swf.下载"-->
+                    <!--type="application/x-shockwave-flash">-->
+                <!--<param name="src" value="https://img.hcharts.cn/static/highcharts/images/moxieplayer.swf">-->
+                <!--<param name="allowfullscreen" value="true">-->
+                <!--<param name="allowscriptaccess" value="true">-->
+            <!--</object>-->
+        <!--</video>-->
+        <div class="images-cover"></div>
+        <div class="images-body col-md-10 col-sm-11 col-xs-12">
+            <h1 class="master-title">In Test We Trust</h1>
+            <h2 class="imsage-subtitle">我们致力于激动人心的创意,让测试更有效同时更有趣</h2>
+            <p class="button-row">
+                <a class="btn btn-theme" href="http://x.sankuai.com/chat/328297?type=chat" target="_blank">Together</a>
+                <a class="btn secondary-link">实现你的想法</a>
+            </p>
+        </div>
+        <div class="images-arrow" style="opacity:.5"><i class="fa fa-chevron-down"></i>&nbsp;</div>
+    </div>
+
+</section>
+<section class="demo-show">
+    <div class="container">
+        <div class="row">
+            <div id="highmaps-demo-box" class="col-md-6 col-sm-12 demo-box">
+                <div class="col-xs-12 box-container">
+                    <div class="demo-frame-container"><img src="js/sonar.png"
+                                                           height="360px" border="0" alt="Sonar静态代码扫描">
+                    </div>
+                    <div class="box-header"><a href="http://wiki.sankuai.com/pages/viewpage.action?pageId=514591406" target="_blank">Sonar接入FAQ
+                        <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="box-content"><p><strong>可自动接入</strong></p>
+                        <p>Sonar静态代码扫描能够快速、准确地查找、定位代码中存在的语义缺陷、安全漏洞等安全风险，并提供修复建议，节约代码安全分析的成本，最终开发安全、可靠的    软件。</p>
+                    </div>
+                </div>
+            </div>
+            <div id="highcloud-demo-box" class="col-md-6 col-sm-12 demo-box">
+                <div class="col-xs-12 box-container">
+                    <div class="demo-frame-container"><img src="images/jacoco.png"
+                                                           height="360px" border="0" alt="Jacoco代码覆盖率">
+                    </div>
+                    <div class="box-header"><a href="http://wiki.sankuai.com/pages/viewpage.action?pageId=689812552" target="_blank">Jacoco接入参考
+                        <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="box-content"><p><strong>一行都不能少</strong></p>
+                        <p>Jacoco提供方便可视化的代码覆盖率统计。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="feature">-->
+    <!--<div class="container">-->
+       <!--广告位招租...-->
+    <!--</div>-->
+<!--</section>-->
+<section class="subfooter">
+    <div class="container">
+        <!--<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 box-container">-->
+
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-container">-->
+
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-container">-->
+
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 box-container">-->
+
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 box-container">-->
+
+        <!--</div>-->
+    </div>
+</section>
+
+<footer class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="copyright">© 2017 美团酒店旅游研发中心测试组 All rights reserved
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="js/plugins.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
